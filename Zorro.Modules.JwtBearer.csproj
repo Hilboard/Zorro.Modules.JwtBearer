@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<PackageId>Zorro.Modules.JwtBearer</PackageId>
+	<Version>0.0.1</Version>
+	<Authors>Artem</Authors>
+	<Authors>Hilboard</Authors>
+	<Description>Jwt bearer module for Zorro</Description>
+	<RepositoryUrl>https://github.com/Hilboard/Zorro.Modules.JwtBearer</RepositoryUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
+    <PackageReference Include="Zorro" Version="0.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<Folder Include="Properties\" />
+  	<Folder Include="Modules\" />
+  	<Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
