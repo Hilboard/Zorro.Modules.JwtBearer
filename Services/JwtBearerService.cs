@@ -80,7 +80,7 @@ public static class JwtBearerService
                 SameSite = SameSiteMode.Strict
             };
 
-            context.http.Response.Cookies.Append(COOKIE_TOKEN_NAME, GenerateToken(expireDate, claims), cookieOptions);
+            context.ResponseCookies.Append(COOKIE_TOKEN_NAME, GenerateToken(expireDate, claims), cookieOptions);
         };
 
         return builder;
