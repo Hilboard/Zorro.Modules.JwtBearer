@@ -5,7 +5,7 @@
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Nullable>enable</Nullable>
 	<PackageId>Zorro.Modules.JwtBearer</PackageId>
-	<Version>0.0.2</Version>
+	<Version>0.1.0</Version>
 	<Authors>Artem</Authors>
 	<Authors>Hilboard</Authors>
 	<Description>Jwt bearer module for Zorro</Description>
@@ -16,13 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
-    <PackageReference Include="Zorro" Version="0.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-  	<Folder Include="Properties\" />
-  	<Folder Include="Modules\" />
-  	<Folder Include="Services\" />
+    <PackageReference Include="Zorro" Version="0.1.6" />
   </ItemGroup>
 
 </Project>

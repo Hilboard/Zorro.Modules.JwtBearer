@@ -55,7 +55,7 @@ public static class JwtBearerService
                 };
             });
 
-        DefaultAuthenticationMethod = (QueryContext context, IUserSignInForm form, dynamic user) =>
+        DefaultAuthenticationMethod = (HttpQueryContext context, IUserSignInForm form, dynamic user) =>
         {
             object userId = user.Id;
             string userName = user.UserName;
